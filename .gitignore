@@ -1,3 +1,4 @@
 .ipynb_checkpoints
 workdir/*
 !workdir/README.md
+.DS_Store
