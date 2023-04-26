@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  jupyterlab:
+  mi_docker_base:
     build: .
     volumes:
       - .:/code
