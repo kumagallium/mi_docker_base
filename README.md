@@ -1,13 +1,19 @@
 # mi_docker_base
+This repository is a development environment for Materials Informatics published by Assistant Professor <a href="https://researchmap.jp/mkumagai?lang=en">Masaya Kumagai</a> at Kyoto University.
+
 
 ## Prerequisites
 
-- Docker
+- Git (windows user): https://gitforwindows.org/
+- Docker Desktop: https://matsuand.github.io/docs.docker.jp.onthefly/desktop/
+  - Docker
+  - Docker-compose
 
 ## Installation
 
 1. Clone this repository.
 	```
+	$ cd YOUR_WORKSPACE
 	$ git clone https://github.com/kumagallium/mi_docker_base.git
 	$ cd mi_docker_base
 	```
@@ -28,19 +34,19 @@ This repository uses Pipenv to manage packages. Below are some basic commands to
 
 - To install a package
 	```
-	$ pipenv uninstall [package name]
+	$ docker-compose exec mi_docker_base pipenv uninstall [package name]
 	```
 - To install packages based on Pipfile.lock
 	```
-	$ pipenv install --ignore-pipfile
+	$ docker-compose exec mi_docker_base pipenv install --ignore-pipfile
 	```
 - To install packages with development dependencies based on Pipfile.lock
 	```
-	$ pipenv install --dev
+	$ docker-compose exec mi_docker_base pipenv install --dev
 	```
 - To remove the virtual environment based on Pipfile.lock
 	```
-	$ pipenv --rm
+	$ docker-compose exec mi_docker_base pipenv --rm
 	```
 
 For more detailed usage, refer to the official documentation.
