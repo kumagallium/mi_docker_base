@@ -29,4 +29,4 @@ COPY . /code/
 
 RUN pip install --upgrade pip && \
     pip install pipenv && \
-	pipenv install --system
+	pipenv install --system --skip-lock
