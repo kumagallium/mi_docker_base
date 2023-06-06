@@ -20,6 +20,7 @@ ipywidgets = "*"
 nodejs = "*"
 bokeh = "*"
 black = "*"
+pdfminer-six = "*"
 
 [requires]
 python_version = "3.8.13"
