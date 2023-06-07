@@ -21,6 +21,7 @@ nodejs = "*"
 bokeh = "*"
 black = "*"
 pdfminer-six = "*"
+chemdataextractor = "*"
 
 [requires]
 python_version = "3.8.13"
