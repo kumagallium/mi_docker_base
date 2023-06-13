@@ -20,6 +20,7 @@ ipywidgets = "*"
 nodejs = "*"
 bokeh = "*"
 black = "*"
+dask = "*"
 
 [requires]
 python_version = "3.8.13"
