@@ -23,6 +23,7 @@ black = "*"
 dask = "*"
 seaborn = "*"
 mpcontribs-client = "*"
+tensorflow = "*"
 
 
 [requires]
